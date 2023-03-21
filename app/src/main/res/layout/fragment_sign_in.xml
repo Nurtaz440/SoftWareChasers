@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".regstrasion.signin.SignInFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="12dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/saly22"
+        app:layout_constraintEnd_toEndOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_email"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/cv_stroke_color"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:inputType="textWebEmailAddress"
+            android:textColorHint="@color/edit_hint_color"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_password"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/cv_stroke_color"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_email"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:ems="10"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textColorHint="@color/edit_hint_color"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNext"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/main_color"
+        android:textColor="@color/btn_sign_in"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/sign_in"
+        app:cornerRadius="24dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cv_password"
+        app:layout_constraintEnd_toEndOf="@+id/cv_password"
+        app:layout_constraintTop_toBottomOf="@+id/cv_password" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

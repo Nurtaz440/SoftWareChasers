@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title=""
+        android:icon="@drawable/anim_home_click"
+        app:showAsAction="ifRoom"
+        android:id="@+id/homeFragment"/>
+
+    <item
+        android:title=""
+        android:icon="@drawable/anim_statistics_click"
+        app:showAsAction="ifRoom"
+        android:id="@+id/staticsFragment"/>
+
+    <item
+        android:title=""
+        android:icon="@drawable/anim_chat_click"
+        app:showAsAction="ifRoom"
+        android:id="@+id/chatFragment"/>
+
+    <item
+        android:title=""
+        android:icon="@drawable/anim_profile_click"
+        app:showAsAction="ifRoom"
+        android:id="@+id/profileFragment"/>
+
+</menu>

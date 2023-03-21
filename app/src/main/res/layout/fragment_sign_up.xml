@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".regstrasion.signup.SignUpFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_name"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/btn_sign_up"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/first_name"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:ems="10"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/edit_hint_color"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_last_name"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/btn_sign_up"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_name"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/last_name"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:ems="10"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/edit_hint_color"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+ <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_password"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/btn_sign_up"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_last_name"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:ems="10"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:textColorHint="@color/edit_hint_color"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_password_conf"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/btn_sign_up"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_password"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/confirm_password"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:ems="10"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:textColorHint="@color/edit_hint_color"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+ <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_email"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/btn_sign_up"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_password_conf"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:ems="10"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/edit_hint_color"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_number"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/btn_sign_up"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_email"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/phone_number"
+            android:paddingStart="24dp"
+            android:text=""
+            android:lines="1"
+            android:ems="10"
+            android:freezesText="true"
+            android:saveEnabled="true"
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/edit_hint_color"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNext"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:textColor="@color/btn_sign_in"
+        android:backgroundTint="@color/btn_sign_up"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/sign_up"
+        android:textAllCaps="true"
+        app:cornerRadius="24dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cv_number"
+        app:layout_constraintEnd_toEndOf="@+id/cv_number"
+        app:layout_constraintTop_toBottomOf="@+id/cv_number" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
