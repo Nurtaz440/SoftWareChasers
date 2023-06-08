@@ -38,7 +38,7 @@
             android:padding="5dp"
             android:layout_marginBottom="32dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/saly15"
+            android:src="@drawable/saly_15"
             app:layout_constraintBottom_toBottomOf="@id/iv_rec"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -98,7 +98,7 @@
             android:id="@+id/rv_gird"
             android:clipToPadding="false"
             app:spanCount="3"
-            android:scrollbars="none"
+            android:overScrollMode="never"
             android:layout_margin="12dp"
             tools:listitem="@layout/item_main"
             app:layout_constraintStart_toStartOf="parent"

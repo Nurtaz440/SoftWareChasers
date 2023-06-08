@@ -2,6 +2,7 @@ package demo.app.demotechno.constants
 
 import demo.app.demotechno.R
 import demo.app.demotechno.model.CategoriesModel
+import demo.app.demotechno.model.EbooksModel
 import demo.app.demotechno.model.IntroSlide
 
 object Constants {
@@ -10,7 +11,7 @@ object Constants {
             IntroSlide(
                 "Learn new and" + " useful topics",
                 "Here you can find various online" + "lessons in just one click",
-                R.drawable.boarding1
+                R.drawable.on_boarding
             ),
             IntroSlide(
                 "Analyze the statistics of your school",
@@ -25,7 +26,7 @@ object Constants {
             IntroSlide(
                 "AI-Mate",
                 "Use artificial intelligence in order to learn something new or as messenger.",
-                R.drawable.ai_mate
+                R.drawable.on_boarding4
             ),
             IntroSlide(
                 "Find answers to any question",
@@ -36,20 +37,19 @@ object Constants {
                 "Virtual Reality",
                 "Virtual laboratory for your various research," +
                         "mix ready elements and have fun.",
-                R.drawable.robot
+                R.drawable.ai_mate2
             )
-
-            )
+        )
     }
 
-    fun getIcons():ArrayList<CategoriesModel>{
+    fun getIcons(): ArrayList<CategoriesModel> {
         return arrayListOf(
-            CategoriesModel(R.drawable.e_books,R.color.e_books_color,"E-BOOKS"),
-            CategoriesModel(R.drawable.exchange,R.color.exchange_color,"EXCHANGE"),
-            CategoriesModel(R.drawable.vr,R.color.vr_color,"VR"),
-            CategoriesModel(R.drawable.news,R.color.news_color,"NEWS"),
-            CategoriesModel(R.drawable.courses,R.color.courses_color,"COURSES"),
-            CategoriesModel(R.drawable.ai_mat,R.color.ai_mate_color,"AI-MATE")
+            CategoriesModel(R.drawable.e_books, R.color.e_books_color, "E-BOOKS"),
+            CategoriesModel(R.drawable.exchange, R.color.exchange_color, "EXCHANGE"),
+            CategoriesModel(R.drawable.vr, R.color.vr_color, "VR"),
+            CategoriesModel(R.drawable.news, R.color.news_color, "NEWS"),
+            CategoriesModel(R.drawable.courses, R.color.courses_color, "COURSES"),
+            CategoriesModel(R.drawable.ai_mate, R.color.ai_mate_color, "AI-MATE")
         )
     }
 }

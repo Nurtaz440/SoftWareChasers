@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">DemoTechno</string>
+    <string name="app_name">SoftEdu</string>
+    <string name="pdfView_page_no" translatable="false">%1$s / %2$s</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="image">Image</string>
@@ -24,5 +26,25 @@
     <string name="future_explorer_desc">Teaching should be such that what is
 offered is perceived as a valuable gift
 and not as a hard duty</string>
+    <string name="e_books">E-BOOKS</string>
+    <string name="uz">uz</string>
+    <string name="grade">grade</string>
+    <string name="ru">ru</string>
+    <string name="general">General</string>
+    <string name="edit_your_info">Edit your info</string>
+    <string name="change_password">Change password</string>
+    <string name="change_language">Change language</string>
+    <string name="add_location">Add location</string>
+    <string name="log_out">Log out</string>
+    <string name="sabixa">Sabixa</string>
+    <string name="exchange">EXCHANGE</string>
+    <string name="get_started">get started</string>
+    <string name="personal_number">Personal number</string>
+    <string name="card_number">Card number</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="virtual_reality">AR LABORATORY</string>
+    <string name="news2">#Conference_2023
+"International Boburshah" scientific and practical conference was held.</string>
+    <string name="news">✅ Today, starting from April 15, the online application for independent study, which is one of the forms of post-higher education, for the 3rd quarter of 2023 was started.</string>
     />
 </resources>

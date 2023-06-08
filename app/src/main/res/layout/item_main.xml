@@ -11,6 +11,7 @@
         app:cardCornerRadius="30dp"
         android:elevation="8dp"
         app:cardElevation="8dp"
+        app:strokeWidth="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.DemoTechno" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.DemoTechno" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_500</item>
@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/main_color</item>
 
         <!-- Customize your theme here. -->
     </style>
@@ -21,5 +21,37 @@
         <item name="tabTextAppearance">@color/tab_text_color</item>
         <item name="android:padding">6dp</item>
 
+    </style>
+      <style name="Theme.Text2" parent="TextAppearance.AppCompat.Body1">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="tabTextAppearance">@color/tab_select</item>
+        <item name="android:padding">6dp</item>
+
+    </style>
+
+
+    <style name="Theme.PdfView.SelectedTheme" parent="@style/Theme.PdfView.Light">
+        <item name="pdfView_actionBarTint">@color/main_color</item>
+        <item name="pdfView_downloadIconTint">#ffffff</item>
+        <item name="pdfView_quality">enhanced</item>
+        <item name="pdfView_titleTextStyle">@style/actionBarTitleAppearance</item>
+        <item name="pdfView_progressBar">@style/customProgressBar</item>
+        <item name="android:statusBarColor">@color/main_color</item>
+    </style>
+    <style name="actionBarTitleAppearance" parent="TextAppearance.AppCompat.Title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="customProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_circle</item>
+        <item name="android:interpolator">@android:interpolator/accelerate_decelerate</item>
+        <item name="android:visibility">gone</item>
     </style>
 </resources>

@@ -118,7 +118,7 @@
                 android:contentDescription="@string/image"
                 android:importantForAccessibility="no"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/boarding1" />
+              />
 
         </RelativeLayout>
 

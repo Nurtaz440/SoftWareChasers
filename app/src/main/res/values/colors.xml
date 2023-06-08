@@ -14,6 +14,7 @@
     <color name="boarding_color_second">#B6BEE5</color>
     <color name="btn_color">#959FD6</color>
     <color name="violet_85">#D95F3194</color>
+    <color name="tab_select">#8C94DA</color>
     <color name="unselected_tab_text">#B3B2B4</color>
     <color name="tab_text_selected">#929BCE</color>
     <color name="edit_hint_color">#A6A4A4</color>
@@ -27,6 +28,27 @@
     <color name="news_color">#C1CDE8</color>
     <color name="courses_color">#C2E5C4</color>
     <color name="ai_mate_color">#D0D2EA</color>
+    <color name="statistics_color">#8995FF</color>
     <color name="text_desc">#8566A4</color>
+    <color name="material_button_bak">#D3D3D3</color>
+    <color name="e_books_back">#F5F5F5</color>
+    <color name="e_books_text_color">#8B6CAA</color>
+    <color name="text1">#ABAFB3</color>
+    <color name="text2">#9196C9</color>
+    <color name="text3">#AC9557</color>
+    <color name="text4">#AC575C</color>
+    <color name="text5">#934F8B</color>
+    <color name="text6">#A385D3</color>
+    <color name="text7">#86BE93</color>
+    <color name="cv_back">#D3CCCC</color>
+    <color name="cv_back2">#C1C4DF</color>
+    <color name="cv_back3">#DACF97</color>
+    <color name="cv_back4">#EA947A</color>
+    <color name="cv_back5">#C086DD</color>
+    <color name="cv_back6">#DAB3EE</color>
+    <color name="cv_back7">#C2E5C4</color>
+    <color name="profile_back">#E8CAF6</color>
+    <color name="text_edit">#B86B3865</color>
+
 
 </resources>

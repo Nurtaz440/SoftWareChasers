@@ -34,13 +34,15 @@ class MainActivity : AppCompatActivity() {
                 R.id.profileFragment
             )
         )
+
         navController.addOnDestinationChangedListener { _, destination, _ ->
 
-            if (destination.id == R.id.onBoardingFragment || destination.id == R.id.regstrationFragment
+            if (destination.id == R.id.homeFragment || destination.id == R.id.staticsFragment
+                || destination.id == R.id.chatFragment || destination.id == R.id.profileFragment
             ) {
-                binding.navView.visibility = View.GONE
-            } else {
                 binding.navView.visibility = View.VISIBLE
+            } else {
+                binding.navView.visibility = View.GONE
             }
 
 

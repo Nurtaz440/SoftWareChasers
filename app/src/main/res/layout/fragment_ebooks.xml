@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/e_books_color"
+    tools:context=".ebooks.EbooksFragment">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow__eft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="36dp"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:padding="10dp"
+        android:text="@string/e_books"
+        android:textAlignment="center"
+        android:textColor="@color/e_books_text_color"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/e_books"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_uz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uz"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:backgroundTint="@color/material_button_bak"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ru"
+        android:textAlignment="center"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_uz"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:backgroundTint="@color/material_button_bak"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_e_books"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:overScrollMode="never"
+        tools:listitem="@layout/item_e_books"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_uz"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

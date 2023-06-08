@@ -14,7 +14,7 @@
         android:layout_marginTop="12dp"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/saly22"
+        android:src="@drawable/saly_22"
         app:layout_constraintEnd_toEndOf="@+id/guideline10"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="parent" />

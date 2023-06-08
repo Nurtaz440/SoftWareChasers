@@ -1,15 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/btn_sign_up"
+    android:background="@color/white"
     tools:context=".statics.StaticsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/statistics_color"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:padding="10dp"
+        android:text="Find suitable school"
+        android:textAlignment="center"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Firstly check carefully  information about school you
+are looking for and then choose or check the statistic of your school "
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="205dp"
+        android:layout_height="195dp"
+        android:importantForAccessibility="no"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/saly_statistics"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:importantForAccessibility="no"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/statistics"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/cardView">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/text4"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                  android:textColor="@color/black"
+                android:text="Al - Xarazmiy nomidagi maktab."/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/violet_85"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                  android:textColor="@color/black"
+                android:text="Ibn Sino nomidagi maktab."/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/statistics_color"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                  android:textColor="@color/black"
+                android:text="Mirzo Ulug'bek nomidagi maktab."/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+         <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#48E451"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                  android:textColor="@color/black"
+                android:text="224 - sonli maktab."/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#FF6F00"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                  android:textColor="@color/black"
+                android:text="86 - sonli maktab."/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/cv_search"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:elevation="10dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:cardBackgroundColor="@color/white"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/guideline15">-->
+
+<!--        <SearchView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp" />-->
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

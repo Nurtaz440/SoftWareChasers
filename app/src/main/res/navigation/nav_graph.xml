@@ -24,7 +24,31 @@
         android:id="@+id/homeFragment"
         android:name="demo.app.demotechno.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_ebooksFragment"
+            app:destination="@id/ebooksFragment"
+            app:popUpTo="@id/ebooksFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_readBookFragment"
+            app:destination="@id/readBookFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_vrFragment"
+            app:destination="@id/vrFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newsFragment"
+            app:destination="@id/newsFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_coursesFragment"
+            app:destination="@id/coursesFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aiMateFragment"
+            app:destination="@id/aiMateFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="demo.app.demotechno.regstrasion.signup.SignUpFragment"
@@ -55,4 +79,50 @@
         android:name="demo.app.demotechno.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/ebooksFragment"
+        android:name="demo.app.demotechno.ebooks.EbooksFragment"
+        android:label="fragment_ebooks"
+        tools:layout="@layout/fragment_ebooks" />
+
+    <fragment
+        android:id="@+id/readBookFragment"
+        android:name="demo.app.demotechno.exchange.ReadBookFragment"
+        android:label="fragment_read_book"
+        tools:layout="@layout/fragment_read_book" />
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="demo.app.demotechno.exchange.scan.ScanFragment"
+        android:label="fragment_scan"
+        tools:layout="@layout/fragment_scan" />
+    <fragment
+        android:id="@+id/vrFragment"
+        android:name="demo.app.demotechno.vr.VrFragment"
+        android:label="fragment_vr"
+        tools:layout="@layout/fragment_vr" >
+        <action
+            android:id="@+id/action_vrFragment_to_vrDetailsFragment"
+            app:destination="@id/vrDetailsFragment"
+            app:popUpTo="@id/vrFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vrDetailsFragment"
+        android:name="demo.app.demotechno.vr.VrDetailsFragment"
+        android:label="fragment_vr_details"
+        tools:layout="@layout/fragment_vr_details" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="demo.app.demotechno.news.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="demo.app.demotechno.courses.CoursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" />
+    <fragment
+        android:id="@+id/aiMateFragment"
+        android:name="demo.app.demotechno.ai_mate.AiMateFragment"
+        android:label="fragment_ai_mate"
+        tools:layout="@layout/fragment_ai_mate" />
 </navigation>
