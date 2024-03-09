@@ -1,34 +1,35 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
-    namespace 'demo.app.demotechno'
-    compileSdk 33
+    namespace = 'demo.app.demotechno'
+    compileSdk = 34
 
     defaultConfig {
-        applicationId "demo.app.demotechno"
-        minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        applicationId = "demo.app.demotechno"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled = false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     buildFeatures {
-        viewBinding true
+        viewBinding = true
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -63,4 +64,26 @@ dependencies {
 
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
+    implementation("com.google.ai.client.generativeai:generativeai:0.1.0")
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+
+    // firebase
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.1'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:21.0.0")
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    // Skip this if you don't want to use integration libraries or configure Glide.
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 }

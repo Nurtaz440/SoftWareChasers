@@ -14,11 +14,6 @@
         app:showAsAction="ifRoom"
         android:id="@+id/staticsFragment"/>
 
-    <item
-        android:title=""
-        android:icon="@drawable/anim_chat_click"
-        app:showAsAction="ifRoom"
-        android:id="@+id/chatFragment"/>
 
     <item
         android:title=""

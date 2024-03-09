@@ -7,7 +7,6 @@
     android:background="@color/ai_mate_color"
     tools:context=".ai_mate.AiMateFragment">
 
-
     <ImageView
         android:id="@+id/iv_back"
         android:layout_width="wrap_content"
@@ -59,7 +58,7 @@
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="500dp"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -134,9 +133,25 @@
                 </androidx.cardview.widget.CardView>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                tools:listitem="@layout/item_chat" />
         </androidx.appcompat.widget.LinearLayoutCompat>
+        <ProgressBar
+            android:id="@+id/image_prompt_progress"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:indeterminateTint="#4686AE"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            />
     </androidx.cardview.widget.CardView>
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_search"
@@ -150,18 +165,39 @@
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-       <EditText
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:background="@android:color/transparent"
-           android:hint="Type here"
-           android:padding="10dp"
-           android:textColorHint="#6C6A6A"
-           android:paddingStart="16dp"
-           android:saveEnabled="true"
-           android:ems="10"
-           android:inputType="text"
-           />
+            <EditText
+                android:id="@+id/ev_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Type here"
+                android:padding="10dp"
+                android:textColorHint="#6C6A6A"
+                android:paddingStart="16dp"
+                android:saveEnabled="true"
+                android:ems="10"
+                android:inputType="text"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_send_24" />
+
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

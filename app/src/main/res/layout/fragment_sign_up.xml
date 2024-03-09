@@ -22,6 +22,7 @@
         app:cardCornerRadius="20dp">
 
         <EditText
+            android:id="@+id/ev_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/first_name"
@@ -56,6 +57,7 @@
         app:cardCornerRadius="20dp">
 
         <EditText
+            android:id="@+id/ev_surname"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/last_name"
@@ -90,6 +92,7 @@
         app:cardCornerRadius="20dp">
 
         <EditText
+            android:id="@+id/ev_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/password"
@@ -124,6 +127,7 @@
         app:cardCornerRadius="20dp">
 
         <EditText
+            android:id="@+id/ev_confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/confirm_password"
@@ -159,6 +163,7 @@
         app:cardCornerRadius="20dp">
 
         <EditText
+            android:id="@+id/ev_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/email"
@@ -193,6 +198,7 @@
         app:cardCornerRadius="20dp">
 
         <EditText
+            android:id="@+id/ev_number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/phone_number"
@@ -211,6 +217,19 @@
             android:importantForAutofill="no" />
 
     </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/cv_number"
+        app:layout_constraintStart_toStartOf="@+id/cv_number"
+        app:layout_constraintTop_toBottomOf="@+id/cv_number" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonNext"
         android:layout_width="0dp"
@@ -229,5 +248,16 @@
         app:layout_constraintStart_toStartOf="@+id/cv_number"
         app:layout_constraintEnd_toEndOf="@+id/cv_number"
         app:layout_constraintTop_toBottomOf="@+id/cv_number" />
+    <ProgressBar
+        android:id="@+id/image_prompt_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/btn_sign_up"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,17 +63,17 @@
         android:id="@+id/signInFragment"
         android:name="demo.app.demotechno.regstrasion.signin.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/staticsFragment"
         android:name="demo.app.demotechno.statics.StaticsFragment"
         android:label="fragment_statics"
         tools:layout="@layout/fragment_statics" />
-    <fragment
-        android:id="@+id/chatFragment"
-        android:name="demo.app.demotechno.chat.ChatFragment"
-        android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />
+
     <fragment
         android:id="@+id/profileFragment"
         android:name="demo.app.demotechno.profile.ProfileFragment"

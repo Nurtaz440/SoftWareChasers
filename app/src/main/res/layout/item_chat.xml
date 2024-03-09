@@ -7,12 +7,13 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/left_chat_view"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="80dp"
         android:layout_marginStart="8dp"
+        android:visibility="gone"
         android:background="@drawable/bg_left"
-        android:backgroundTint="@color/statistics_color"
+        android:backgroundTint="#858AB4"
         android:padding="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,13 +29,14 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/right_chat_view"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/bg_right"
-        android:backgroundTint="@color/main_color"
+        android:backgroundTint="#A4AAE2"
         android:padding="8dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

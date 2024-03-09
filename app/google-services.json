@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "53794649888",
+    "project_id": "softedu-ab8bb",
+    "storage_bucket": "softedu-ab8bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53794649888:android:11f8d81988dba35f320945",
+        "android_client_info": {
+          "package_name": "demo.app.demotechno"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARpLAVUwgZFmjxf9W43MF7sUxtYmWWEE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

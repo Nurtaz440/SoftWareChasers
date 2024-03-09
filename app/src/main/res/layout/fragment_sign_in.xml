@@ -22,35 +22,35 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cv_email"
         android:layout_width="0dp"
-        android:layout_height="42dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        app:strokeWidth="2dp"
-        app:strokeColor="@color/cv_stroke_color"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:cardCornerRadius="20dp">
+        app:strokeColor="@color/cv_stroke_color"
+        app:strokeWidth="2dp">
 
         <EditText
+            android:id="@+id/ev_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/email"
-            android:paddingStart="24dp"
-            android:text=""
-            android:lines="1"
-            android:importantForAutofill="no"
-            android:ems="10"
-            android:imeOptions="actionNext"
-            android:freezesText="true"
-            android:saveEnabled="true"
-            android:textCursorDrawable="@drawable/edit_text_cursore"
             android:backgroundTint="@color/white"
-            android:textSize="16sp"
+            android:ems="10"
+            android:freezesText="true"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
             android:inputType="textWebEmailAddress"
+            android:lines="1"
+            android:paddingStart="24dp"
+            android:saveEnabled="true"
+            android:text=""
             android:textColorHint="@color/edit_hint_color"
-            />
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:textSize="16sp" />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -59,32 +59,33 @@
         android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        app:strokeWidth="2dp"
-        app:strokeColor="@color/cv_stroke_color"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cv_email"
-        app:cardCornerRadius="20dp">
+        app:strokeColor="@color/cv_stroke_color"
+        app:strokeWidth="2dp">
 
         <EditText
+            android:id="@+id/ev_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/password"
-            android:paddingStart="24dp"
-            android:text=""
-            android:lines="1"
+            android:backgroundTint="@color/white"
             android:ems="10"
             android:freezesText="true"
-            android:saveEnabled="true"
-            android:textCursorDrawable="@drawable/edit_text_cursore"
-            android:backgroundTint="@color/white"
-            android:textSize="16sp"
+            android:hint="@string/password"
             android:imeOptions="actionDone"
+            android:importantForAutofill="no"
             android:inputType="textPassword"
+            android:lines="1"
+            android:paddingStart="24dp"
+            android:saveEnabled="true"
+            android:text=""
             android:textColorHint="@color/edit_hint_color"
-            android:importantForAutofill="no" />
+            android:textCursorDrawable="@drawable/edit_text_cursore"
+            android:textSize="16sp" />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -93,19 +94,32 @@
         android:id="@+id/buttonNext"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/main_color"
-        android:textColor="@color/btn_sign_in"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
-        android:text="@string/sign_in"
-        app:cornerRadius="24dp"
-        android:textAllCaps="true"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/main_color"
+        android:text="@string/sign_in"
+        android:textAllCaps="true"
+        android:textColor="@color/btn_sign_in"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/cv_password"
         app:layout_constraintEnd_toEndOf="@+id/cv_password"
+        app:layout_constraintStart_toStartOf="@+id/cv_password"
+        app:layout_constraintTop_toBottomOf="@+id/cv_password" />
+
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/cv_password"
+        app:layout_constraintStart_toStartOf="@+id/cv_password"
         app:layout_constraintTop_toBottomOf="@+id/cv_password" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -113,14 +127,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintGuide_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="256dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/guideline9" />
 
+    <ProgressBar
+        android:id="@+id/image_prompt_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/main_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
