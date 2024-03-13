@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="36dp"
+        android:padding="10dp"
         android:importantForAccessibility="no"
         android:src="@drawable/arrow__eft"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,84 +45,17 @@
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_math"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_news"
         android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:elevation="10dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="10dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        tools:listitem="@layout/news_item"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView3">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="210dp"
-                android:src="@drawable/news2"
-                android:scaleType="centerCrop"
-                android:importantForAccessibility="no"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/news"
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="normal" />
-
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_new3"
-        android:layout_width="0dp"
-        android:layout_height="280dp"
-        android:elevation="10dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cv_math">
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="210dp"
-                android:src="@drawable/news3"
-                android:scaleType="centerCrop"
-                android:importantForAccessibility="no"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/news2"
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="normal" />
-
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
