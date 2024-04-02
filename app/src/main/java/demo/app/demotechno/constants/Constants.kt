@@ -9,35 +9,31 @@ object Constants {
     fun getOnBoardingList(): ArrayList<IntroSlide> {
         return arrayListOf(
             IntroSlide(
-                "Learn new and" + " useful topics",
+                "Explore new topics",
                 "Here you can find various online" + "lessons in just one click",
                 R.drawable.on_boarding
             ),
             IntroSlide(
-                "Analyze the statistics of your school",
-                "Explore the best school in your city" + "or find your school in given graph ",
-                R.drawable.onboarding4
-            ),
-            IntroSlide(
-                "Use e-books at school",
-                "Use e-books instead of actual books" + "at school  ",
+                "Use e-books with VR",
+                "VR will help you understand topics by visualizing " + "them and bring fun to your learning experience. ",
                 R.drawable.books
             ),
             IntroSlide(
                 "AI-Mate",
-                "Use artificial intelligence in order to learn something new or as messenger.",
-                R.drawable.on_boarding4
+                "Just ask a question on any subject and you'll find the answer.",
+                R.drawable.chat
             ),
             IntroSlide(
-                "Find answers to any question",
-                "Just write down question related to any" + "school subject in order to find answer",
-                R.drawable.onboarding2
-            ),
-            IntroSlide(
-                "Virtual Reality",
+                "Augmented Reality",
                 "Virtual laboratory for your various research," +
                         "mix ready elements and have fun.",
-                R.drawable.ai_mate2
+                R.drawable.ar
+            ) ,
+            IntroSlide(
+                "News",
+                "Stay up to date on new news " +
+                        "and opportunities in education with us.",
+                R.drawable.desktop
             )
         )
     }
@@ -45,8 +41,8 @@ object Constants {
     fun getIcons(): ArrayList<CategoriesModel> {
         return arrayListOf(
             CategoriesModel(R.drawable.e_books, R.color.e_books_color, "E-BOOKS"),
-            CategoriesModel(R.drawable.exchange, R.color.exchange_color, "EXCHANGE"),
-            CategoriesModel(R.drawable.vr, R.color.vr_color, "VR"),
+            CategoriesModel(R.drawable.vr_book, R.color.exchange_color, "VR BOOKS"),
+            CategoriesModel(R.drawable.vr, R.color.vr_color, "VR LAB"),
             CategoriesModel(R.drawable.news, R.color.news_color, "NEWS"),
             CategoriesModel(R.drawable.courses, R.color.courses_color, "COURSES"),
             CategoriesModel(R.drawable.ai_mate, R.color.ai_mate_color, "AI-MATE")

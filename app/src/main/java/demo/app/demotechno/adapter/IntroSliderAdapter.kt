@@ -49,7 +49,7 @@ class IntroSliderAdapter(val context: Context)
             holder.ivCircule4.visibility = View.VISIBLE
         }
         when(position){
-            2->{
+            1->{
                 holder.ivImage.setPadding(20,20,20,20)
                 holder.ivIcon.visibility = View.VISIBLE
                 holder.ivIcon2.visibility = View.VISIBLE

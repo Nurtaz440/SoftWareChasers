@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView android:id="@+id/cv_math"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
-    android:elevation="5dp"
-    android:layout_marginTop="12dp"
-    android:layout_marginStart="24dp"
-    android:layout_marginEnd="24dp"
-    android:layout_marginBottom="12dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="5dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/imageView3"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    app:cardUseCompatPadding="true">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:elevation="10dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/journal_row_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:padding="10dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/journal_row_share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:src="@android:drawable/ic_menu_share" />
+
+        </LinearLayout>
+
 
         <ImageView
-            android:id="@+id/iv_image"
-            android:layout_width="wrap_content"
-            android:layout_height="210dp"
-            android:src="@drawable/news2"
-            android:scaleType="centerCrop"
-            android:importantForAccessibility="no"/>
+            android:id="@+id/journal_image_list"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
 
         <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
+            android:id="@+id/journal_desc"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/news"
-            android:padding="5dp"
-            android:textAlignment="center"
+            android:padding="10dp"
+            android:maxLines="2"
+            android:ellipsize="marquee"
+            android:text="Description"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="normal" />
+            android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/journal_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Date Created"
+            android:textSize="16sp"
+            android:textStyle="italic" />
     </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
+</androidx.cardview.widget.CardView>

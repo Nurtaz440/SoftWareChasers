@@ -78,7 +78,11 @@
         android:id="@+id/profileFragment"
         android:name="demo.app.demotechno.profile.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_addNewsFragment"
+            app:destination="@id/addNewsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ebooksFragment"
         android:name="demo.app.demotechno.ebooks.EbooksFragment"
@@ -114,7 +118,11 @@
         android:id="@+id/newsFragment"
         android:name="demo.app.demotechno.news.NewsFragment"
         android:label="fragment_news"
-        tools:layout="@layout/fragment_news" />
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/coursesFragment"
         android:name="demo.app.demotechno.courses.CoursesFragment"
@@ -125,4 +133,23 @@
         android:name="demo.app.demotechno.ai_mate.AiMateFragment"
         android:label="fragment_ai_mate"
         tools:layout="@layout/fragment_ai_mate" />
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="demo.app.demotechno.news.NewsDetailFragment"
+        android:label="fragment_news_detail"
+        tools:layout="@layout/fragment_news_detail" >
+
+        <argument
+            android:name="newsArg"
+            app:argType="demo.app.demotechno.model.News"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addNewsFragment"
+        android:name="demo.app.demotechno.news.AddNewsFragment"
+        android:label="fragment_add_news"
+        tools:layout="@layout/fragment_add_news" >
+        <action
+            android:id="@+id/action_addNewsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 </navigation>

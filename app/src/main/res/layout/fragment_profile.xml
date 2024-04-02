@@ -194,6 +194,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:padding="10dp"
+            android:id="@+id/llAddNews"
             android:orientation="horizontal">
 
             <ImageView
@@ -208,7 +209,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:text="@string/add_location"
+                android:text="Add News"
                 android:textColor="@color/text_edit"
                 android:textSize="16sp" />
         </LinearLayout>
