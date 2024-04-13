@@ -2,9 +2,14 @@
 buildscript {
     repositories {
         google()
+        mavenCentral()
     }
     dependencies {
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7")
+
+//        classpath("com.android.tools.build:gradle:8.4")
+        // The Google VR NDK requires experimental version 0.9.3 or higher.
+        // classpath 'com.android.tools.build:gradle-experimental:0.9.3'
     }
 }
 plugins {

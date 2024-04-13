@@ -67,7 +67,7 @@ class ProfileFragment : Fragment() {
         binding.cvPhoto.setOnClickListener {
             val dialog = Dialog(requireActivity())
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-            dialog.setCancelable(false)
+            dialog.setCancelable(true)
             dialog.setContentView(R.layout.dialog)
 
             val profileImage = dialog.findViewById<View>(R.id.iv_profile) as ImageView

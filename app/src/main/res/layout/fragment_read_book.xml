@@ -23,23 +23,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="@string/exchange"
+        android:text="VR Stadiums"
         android:textAlignment="center"
         android:textColor="#675E95"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/iv_back"
         app:layout_constraintTop_toBottomOf="@+id/iv_back" />
-
-    <ImageView
-        android:layout_width="145dp"
-        android:layout_height="145dp"
-        android:importantForAccessibility="no"
-        android:src="@drawable/exchange"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
 
 
     <com.google.android.material.card.MaterialCardView
@@ -48,7 +38,6 @@
         android:layout_height="0dp"
         android:layout_margin="24dp"
         android:elevation="5dp"
-        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="42dp"
         app:cardElevation="5dp"
         app:layout_constraintBottom_toBottomOf="@id/guideline3"
@@ -62,40 +51,254 @@
             android:layout_height="match_parent">
 
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tab_layout"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Best Stadiums"
+                android:textAlignment="center"
+                android:textColor="#675E95"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/materialCardView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
                 android:layout_width="0dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <ImageView
+                    android:id="@+id/ivBook"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/allinaz_arena_stadium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivBook2"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/camp_nou_studium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivBook3"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/maracana_stsdium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="#C8D4E9"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="5dp"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:strokeWidth="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/vr_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/white"
-                android:textSize="22sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tabGravity="center"
-                app:tabIndicatorAnimationMode="elastic"
-                app:tabIndicatorGravity="bottom"
-                app:tabIndicatorHeight="2dp"
-                app:tabIndicatorFullWidth="true"
-                app:tabMinWidth="150dp"
-                app:tabSelectedTextColor="@color/tab_select"
-                app:tabTextColor="@color/unselected_tab_text"
-                app:tabIndicatorColor="@color/tab_select"
-                app:tabMode="fixed"
-                app:tabRippleColor="@android:color/transparent"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:elevation="5dp"
+                app:cardBackgroundColor="#C8D4E9"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="5dp"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:strokeWidth="0dp">
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewPager"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/vr_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="#C8D4E9"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="5dp"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView2"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:strokeWidth="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/vr_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="#C8D4E9"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="5dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView3"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:strokeWidth="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/vr_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvPopuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Currently popular"
+                android:textAlignment="center"
+                android:textColor="#675E95"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/materialCardView"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tab_layout" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintTop_toBottomOf="@+id/tvPopuler">
+
+                <ImageView
+                    android:id="@+id/ivBook4"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/old_trafford_studium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivBook5"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/ahmad_bin_ali"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivBook6"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/al_khor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.widget.Guideline
@@ -103,13 +306,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.17" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.90" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

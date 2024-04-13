@@ -93,7 +93,11 @@
         android:id="@+id/readBookFragment"
         android:name="demo.app.demotechno.exchange.ReadBookFragment"
         android:label="fragment_read_book"
-        tools:layout="@layout/fragment_read_book" />
+        tools:layout="@layout/fragment_read_book" >
+        <action
+            android:id="@+id/action_readBookFragment_to_viewVRFragment"
+            app:destination="@id/viewVRFragment" />
+    </fragment>
     <fragment
         android:id="@+id/scanFragment"
         android:name="demo.app.demotechno.exchange.scan.ScanFragment"
@@ -152,4 +156,9 @@
             android:id="@+id/action_addNewsFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/viewVRFragment"
+        android:name="demo.app.demotechno.exchange.ViewVRFragment"
+        android:label="fragment_view_v_r"
+        tools:layout="@layout/fragment_view_v_r" />
 </navigation>
