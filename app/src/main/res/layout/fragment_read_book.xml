@@ -86,7 +86,7 @@
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
-                    android:src="@drawable/allinaz_arena_stadium"
+                    android:src="@drawable/book"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -100,7 +100,7 @@
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
-                    android:src="@drawable/camp_nou_studium"
+                    android:src="@drawable/book2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,7 +114,7 @@
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
-                    android:src="@drawable/maracana_stsdium"
+                    android:src="@drawable/book3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
@@ -262,10 +262,10 @@
                     android:layout_margin="4dp"
                     android:layout_weight="1"
                     android:importantForAccessibility="no"
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
-                    android:src="@drawable/old_trafford_studium"
+                    android:src="@drawable/book4"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -279,7 +279,7 @@
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
-                    android:src="@drawable/ahmad_bin_ali"
+                    android:src="@drawable/book"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -293,7 +293,7 @@
                     android:scaleType="fitXY"
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
-                    android:src="@drawable/al_khor"
+                    android:src="@drawable/book5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>

@@ -33,7 +33,7 @@ class ViewVRFragment : Fragment() {
         val options = VrPanoramaView.Options()
         try {
             options.inputType = VrPanoramaView.Options.TYPE_MONO
-            binding.viewPanaroma.loadImageFromBitmap(BitmapFactory.decodeResource(resources, R.drawable.ahad_bin_ali_map), options)
+            binding.viewPanaroma.loadImageFromBitmap(BitmapFactory.decodeResource(resources, R.drawable.maracana_map), options)
         } catch (e: Exception) {
             e.printStackTrace()
         }
