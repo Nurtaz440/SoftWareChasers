@@ -112,6 +112,15 @@
             android:id="@+id/action_vrFragment_to_vrDetailsFragment"
             app:destination="@id/vrDetailsFragment"
             app:popUpTo="@id/vrFragment" />
+        <action
+            android:id="@+id/action_vrFragment_to_mathVRFragment"
+            app:destination="@id/mathVRFragment" />
+        <action
+            android:id="@+id/action_vrFragment_to_biologyVRFragment"
+            app:destination="@id/biologyVRFragment" />
+        <action
+            android:id="@+id/action_vrFragment_to_geographyVRFragment"
+            app:destination="@id/geographyVRFragment" />
     </fragment>
     <fragment
         android:id="@+id/vrDetailsFragment"
@@ -161,4 +170,19 @@
         android:name="demo.app.demotechno.exchange.ViewVRFragment"
         android:label="fragment_view_v_r"
         tools:layout="@layout/fragment_view_v_r" />
+    <fragment
+        android:id="@+id/mathVRFragment"
+        android:name="demo.app.demotechno.vr.MathVRFragment"
+        android:label="fragment_math_v_r"
+        tools:layout="@layout/fragment_math_v_r" />
+    <fragment
+        android:id="@+id/biologyVRFragment"
+        android:name="demo.app.demotechno.vr.BiologyVRFragment"
+        android:label="fragment_biology_v_r"
+        tools:layout="@layout/fragment_biology_v_r" />
+    <fragment
+        android:id="@+id/geographyVRFragment"
+        android:name="demo.app.demotechno.vr.GeographyVRFragment"
+        android:label="fragment_geography_v_r"
+        tools:layout="@layout/fragment_geography_v_r" />
 </navigation>

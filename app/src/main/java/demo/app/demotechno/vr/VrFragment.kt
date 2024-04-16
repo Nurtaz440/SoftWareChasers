@@ -29,18 +29,20 @@ class VrFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.cvBiology.setOnClickListener {
-            findNavController().navigate(R.id.action_vrFragment_to_vrDetailsFragment)
+            findNavController().navigate(R.id.action_vrFragment_to_biologyVRFragment)
         }
          binding.cvMath.setOnClickListener {
-            findNavController().navigate(R.id.action_vrFragment_to_vrDetailsFragment)
+            findNavController().navigate(R.id.action_vrFragment_to_mathVRFragment)
         }
          binding.cvGeography.setOnClickListener {
-            findNavController().navigate(R.id.action_vrFragment_to_vrDetailsFragment)
+            findNavController().navigate(R.id.action_vrFragment_to_geographyVRFragment)
         }
          binding.cvChemistry.setOnClickListener {
             findNavController().navigate(R.id.action_vrFragment_to_vrDetailsFragment)
         }
-
+        binding.ivBack.setOnClickListener {
+            findNavController().popBackStack()
+        }
 
     }
 }
